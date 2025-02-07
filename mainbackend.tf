@@ -113,3 +113,11 @@ resource "azurerm_virtual_network" "vnet01" {
     address_space = ["10.0.0.0/16"]
     dns_servers = []
 }
+
+resource "azurerm_resource_group" "rgTF3" {
+    name = "shivargTF3"
+    location = "EastUS"
+    tags = {
+      environ = "Dev"
+    }
+}
